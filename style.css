@@ -1,5 +1,4 @@
 .landing{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -11,6 +10,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 32px;
+    position: fixed;
+    z-index: 10000;
 }
 .landing header img{
     height: 24px;
@@ -83,6 +84,7 @@
     background-size: cover;
     width: 100%;
     position: relative;
+    height: 100vh;
 }
 .text{
     height: 150px;
@@ -157,6 +159,7 @@ p.note2{
     font-weight: 300;
     opacity: .6;
 }
+
 /* portfolio */
 section#portfolio{
     background-color: var(--section-background);
@@ -250,7 +253,6 @@ footer span{
 
 /* tablets screens */
 @media (min-width: 678px) {
-
     .p-content{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -303,7 +305,10 @@ footer span{
         font-size: 35px;
     }
 }
+/* pc screen */
 @media (min-width: 992px) {
+    
+    
     section#services{
         padding: 0px;
     }
